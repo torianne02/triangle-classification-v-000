@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind(triangle)
-    if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= s1 ||(s1 + s3) <= s2
+    if (@s_one * @s_two * @s_three) == 0 || (@s_one + @s_two) <= @s_three || (@s_two + @s_three) <= @s_one || (@s_one + @s_three) <= @s_two
       begin
         raise TriangleError
       rescue TriangleError => error
