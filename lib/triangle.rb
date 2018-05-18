@@ -11,7 +11,7 @@ class Triangle
     if @s_one == @s_two && @s_one == @s_three
       return :equilateral
     #elsif (@s_one == @s_two && @s_one == @s_three) || (@s_two == @s_one && @s_two == @s_three) || (@s_three == @s_one && @s_three == @s_two)
-  elsif @s_one != @s_two && @s_one != @s_three && @s_two != @s_three
+    elsif @s_one != @s_two && @s_one != @s_three && @s_two != @s_three
       return :scalene
     else
       return :isosceles
