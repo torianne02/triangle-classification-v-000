@@ -7,10 +7,11 @@ class Triangle
     @s_three = side_three
   end
 
-  def kind(triangle)
+  def kind
     if (@s_one * @s_two * @s_three) == 0 || (@s_one + @s_two) <= @s_three || (@s_two + @s_three) <= @s_one || (@s_one + @s_three) <= @s_two
       begin
         raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     elsif @s_one == @s_two && @s_one == @s_three
